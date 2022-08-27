@@ -1,9 +1,8 @@
 /node_modules
 .env
 
-./parse.html
-./parsse.html
-./README.md
+parse.html
+parsse.html
 ./LICENSE
 /.git1
 /GG
