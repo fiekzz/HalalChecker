@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Halal Malaysian Portal</title>
+
+    <meta
+      name="viewport"
+      content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"
+    />
+
+    <link
+      href="css/popup.css"
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+    />
+    <link
+      href="css/styles.css"
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+    />
+
+    <link
+      href="css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+    />
+    <link
+      href="css/responsive.css"
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+    />
+
+    <link rel="stylesheet" href="modalwindow/modal.css" type="text/css" />
+    <link rel="stylesheet" href="modalwindow/dhtmlwindow.css" type="text/css" />
+
+    <script type="text/javascript" src="modalwindow/dhtmlwindow.js">
+      /***********************************************
+      * DHTML Window Widget-  Dynamic Drive (www.dynamicdrive.com)
+      * This notice must stay intact for legal use.
+      * Visit http://www.dynamicdrive.com/ for full source code
+      ***********************************************/
+    </script>
+    <script type="text/javascript" src="modalwindow/modal.js"></script>
+
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+
+    <link href="css/owl.carousel.css" rel="stylesheet" />
+    <link href="css/owl.theme.css" rel="stylesheet" />
+    <link href="css/prettify.css" rel="stylesheet" />
+    <link href="css/hover.css" rel="stylesheet" />
+
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script language="javascript" type="text/javascript">
+      function do_search(url) {
+        //if(document.halal.cari.value==''){
+        //      alert("Sila masukkan maklumat carian");
+        //      document.halal.cari.focus();
+        //} else {
+        document.halal.action = url;
+        document.halal.target = "_self";
+        document.halal.submit();
+        //}
+      }
+      function do_homes(url) {
+        document.homes.action = url;
+        document.homes.target = "_self";
+        document.homes.submit();
+      }
+      function validateForm() {
+        alert("ss");
+        var x = document.halal.cari.value;
+        if (x == "") {
+          alert("Maklumat Carian perlu diisi");
+          return false;
+        }
+      }
+    </script>
+  </head>
+
+  <div class="header"></div>
+
+  <div class="halal-logo">
+    <img src="images/halalLogo.png" title="Click to display main pages" />
+  </div>
+  <div class="halal-logo-header">
+    <img src="images/logoTop.png" title="Click to display main pages" />
+  </div>
+  <h3>HALAL MALAYSIA OFFICIAL PORTAL</h3>
+  PORTAL RASMI HALAL MALAYSIA
+
+  <div style="display: block"></div>
+  <div class="main-wrap clearfix hidden-xs">
+    <div class="shortcut-menu clearfix">
+      <div class="shortcut-menu-wrap">
+        <a
+          href="http://www.halal.gov.my/v4/index.php?data=ZGlyZWN0b3J5L2luZGV4X2RpcmVjdG9yeTs7Ozs=negeri=&amp;category=&amp;cari=kfc&lang=en"
+          style="color: #fff"
+          ><b>ENG</b></a
+        >
+        <a
+          href="http://www.halal.gov.my/v4/index.php?data=ZGlyZWN0b3J5L2luZGV4X2RpcmVjdG9yeTs7Ozs=negeri=&amp;category=&amp;cari=kfc&lang=bm"
+          style="color: #fff"
+          ><b>BM</b></a
+        >
+        <select
+          name="utama"
+          onchange="do_homes('index.php?data=bW9kdWxlcy9uZXdzOzs7Ow==&view=')"
+          style="max-width: 200px; min-width: 200px"
+        >
+          <option value="home">Home</option>
+          <option value="corporate">Corporate</option>
+          <option value="sijil">Certification</option>
+          <option value="panduan">Guideline</option>
+
+          <option value="contact_us">Contact Us</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-pages main-wrap">
+    <h3>Halal Malaysia Directory</h3>
+  </div>
+
+  <div class="center-block">
+    <div class="main-wrap clearfix">
+      <form name="halal" method="post" action="">
+        <div class="announcement">
+          <h3>Carian:</h3>
+          <div>
+            <div>
+              <br />
+              <select
+                name="negeri"
+                style="min-width: 150px; max-width: 150px"
+                onchange="do_search('index.php?data=ZGlyZWN0b3J5L2luZGV4X2RpcmVjdG9yeTs7Ozs=')"
+              >
+                <option value="" selected="selected">
+                  Please Select State
+                </option>
+                <option value="01">Johor</option>
+                <option value="02">Kedah</option>
+                <option value="03">Kelantan</option>
+                <option value="04">Melaka</option>
+                <option value="05">Negeri Sembilan</option>
+                <option value="06">Pahang</option>
+                <option value="07">Pulau Pinang</option>
+                <option value="08">Perak</option>
+                <option value="09">Perlis</option>
+                <option value="10">Selangor</option>
+                <option value="11">Terengganu</option>
+                <option value="12">Sabah</option>
+                <option value="13">Sarawak</option>
+                <option value="14">W.P. Kuala Lumpur</option>
+                <option value="15">W.P. Labuan</option>
+                <option value="16">W.P. Putrajaya</option>
+              </select>
+              <select
+                name="category"
+                style="min-width: 250px; max-width: 250px"
+                onchange="do_search('index.php?data=ZGlyZWN0b3J5L2luZGV4X2RpcmVjdG9yeTs7Ozs=')"
+              >
+                <option value="">Please Select Category</option>
+                <option value="BG">Barang Gunaan</option>
+                <option value="FM">Farmaseutikal</option>
+                <option value="KO">Kosmetik dan Dandanan Diri</option>
+                <option value="MD">Peranti Perubatan</option>
+                <option value="OEM">
+                  Pengilangan Kontrak / Original Equipment Manufacturing(OEM)
+                </option>
+                <option value="PE">Premis Makanan</option>
+                <option value="PL">Logistik</option>
+                <option value="PR">Produk Makanan / Minuman</option>
+                <option value="PS">Rumah Sembelihan</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="search-status">
+          <h3>Verify Halal Status :</h3>
+          <div class="check-content search-wrap">
+            <input
+              type="text"
+              class="search-name"
+              name="cari"
+              placeholder="Search..."
+              value="kfc"
+              required="required"
+            />
+            <input
+              type="button"
+              name="btn-search"
+              class="search-button"
+              onClick="do_search('index.php?data=ZGlyZWN0b3J5L2luZGV4X2RpcmVjdG9yeTs7Ozs=')"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <link rel="stylesheet" href="modalwindow/modal.css" type="text/css" />
+  <link rel="stylesheet" href="modalwindow/dhtmlwindow.css" type="text/css" />
+  <script type="text/javascript" src="modalwindow/dhtmlwindow.js">
+    /***********************************************
+    * DHTML Window Widget-  Dynamic Drive (www.dynamicdrive.com)
+    * This notice must stay intact for legal use.
+    * Visit http://www.dynamicdrive.com/ for full source code
+    ***********************************************/
+  </script>
+  <script type="text/javascript" src="modalwindow/modal.js"></script>
+  <script type="text/javascript">
+    function open_modal(URL, title) {
+      //alert(URL);
+      emailwindow = dhtmlmodal.open(
+        "EmailBox",
+        "iframe",
+        URL,
+        title,
+        "width=850,height=500,center=1,resize=0,scrolling=1"
+      );
+    } //End "opennewsletter" function
+    //function openModal(URL, title){
+    //alert(URL);
+    //      emailwindow=dhtmlmodal.open('EmailBox', 'iframe', URL, title, 'width=850,height=500,center=1,resize=0,scrolling=1')
+    //} //End "opennewsletter" function
+  </script>
+  <script language="JavaScript">
+    function openModal(URL, title) {
+      if (window.showModalDialog) {
+        window.showModalDialog(URL, title, "dialogWidth:850;dialogHeight:500");
+      } else {
+        window.open(
+          URL,
+          title,
+          "height=850,width=500,toolbar=no,directories=no,status=no, linemenubar=no,scrollbars=yes,resizable=no ,modal=yes"
+        );
+      }
+    }
+  </script>
+  <script type="text/javascript">
+    function do_menu1(URL, ty) {
+      var cari = document.halal.cari.value;
+      var gcari = cari.replace("&", "@d");
+      document.direktori.ty.value = ty;
+      document.direktori.action = URL + "&cari=" + gcari;
+      document.direktori.target = "_self";
+      document.direktori.submit();
+    }
+  </script>
+  <div class="main-wrap clearfix"></div>
+
+  <div class="content-wrap main-content-wrap">
+    <div class="main-wrap clearfix">
+      <div class="sidebar">
+        <div class="sidebar-menu">
+          <ul>
+            <li class="sidebar-menu-heading clearfix">Kategori / Skim</li>
+            <li class="clearfix">
+              <a
+                onClick="do_menu1('index.php?data=ZGlyZWN0b3J5L2luZGV4X2RpcmVjdG9yeTs7Ozs=&negeri=&category=','CO')"
+                style="cursor: pointer"
+                class="active"
+                >Syarikat (3)
+              </a>
+            </li>
+
+            <li class="clearfix">
+              <a
+                onClick="do_menu1('index.php?data=ZGlyZWN0b3J5L2luZGV4X2RpcmVjdG9yeTs7Ozs=&negeri=&category=','HO')"
+                style="cursor: pointer"
+                >Hotel & Resort (1)</a
+              >
+            </li>
+            <li class="clearfix">
+              <a
+                onClick="do_menu1('index.php?data=ZGlyZWN0b3J5L2luZGV4X2RpcmVjdG9yeTs7Ozs=&negeri=&category=','PE')"
+                style="cursor: pointer"
+                >Premis Makanan (1,179)</a
+              >
+            </li>
+            <li class="clearfix">
+              <a
+                onClick="do_menu1('index.php?data=ZGlyZWN0b3J5L2luZGV4X2RpcmVjdG9yeTs7Ozs=&negeri=&category=','MM')"
+                style="cursor: pointer"
+                >Menu Makanan (205)</a
+              >
+            </li>
+
+            <li class="clearfix">
+              <a
+                onClick="do_menu1('index.php?data=ZGlyZWN0b3J5L2luZGV4X2RpcmVjdG9yeTs7Ozs=&negeri=&category=','PR')"
+                style="cursor: pointer"
+                >Produk (38)</a
+              >
+            </li>
+
+            <li class="clearfix">
+              <a>Kosmetik</a>
+            </li>
+
+            <li class="clearfix">
+              <a>Farmaseutikal</a>
+            </li>
+
+            <li class="clearfix">
+              <a>Barang Gunaan</a>
+            </li>
+
+            <li class="clearfix">
+              <a>Rumah Sembelihan</a>
+            </li>
+
+            <li class="clearfix">
+              <a>Logistik</a>
+            </li>
+
+            <li class="clearfix">
+              <a>International</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="main-content-container">
+        <div class="pages-heading">
+          Selamat datang ke direktori Halal Malaysia. Sila pilih negeri atau
+          masukkan maklumat carian anda.
+          <h3>SENARAI SYARIKAT</h3>
+        </div>
+
+        <div class="search-result">
+          <ul>
+            <li class="clearfix heading-search-result">
+              <div class="search-bil" style="width: 10%"><b>Bil</b></div>
+              <div class="search-details" style="width: 60%">
+                <b>Nama & Alamat Syarikat</b>
+              </div>
+              <div class="search-date-expired" style="width: 20%">
+                <b>Tarikh Luput Sijil Halal</b>
+              </div>
+              <div class="search-company" style="width: 10%">
+                <b>Syarikat</b>
+              </div>
+            </li>
+
+            <li class="clearfix search-result-data">
+              <div class="search-bil" style="width: 10%">1.</div>
+              <div class="search-details" style="width: 60%">
+                <span class="company-name"
+                  >QSR MANUFACTURING SDN BHD ( FORMELY KNOWN AS
+                  <font color="#FF0000"><b>KFC</b></font> MANUFACTURING SDN
+                  BHD)</span
+                >
+                <span class="company-address"
+                  >NO. 17, 19 & 21, JALAN PEMAJU U1/15,<br />SEKSYEN U1, HICOM
+                  GLENMARIE INDUSTRIAL PARK,<br />40150 SHAH ALAM, SELANGOR.<br
+                /></span>
+                <span class="company-brand"></span>
+              </div>
+              <div class="search-date-expired" style="width: 20%">
+                31/03/2024<br />15/01/2024<br />31/10/2023<br />15/07/2023<br />15/05/2023<br />31/12/2022<br />15/12/2022<br />30/11/2022<br />15/11/2022.
+              </div>
+              <div class="search-company" style="width: 10%">
+                <img
+                  src="images/searchIcon.png"
+                  alt="QSR MANUFACTURING SDN BHD ( FORMELY KNOWN AS KFC MANUFACTURING SDN BHD)"
+                  title="QSR MANUFACTURING SDN BHD ( FORMELY KNOWN AS KFC MANUFACTURING SDN BHD)"
+                  style="cursor: pointer"
+                  onclick="openModal('directory/slm_viewdetail.php?comp_code=COMP-20050718-160644&type=C&ty=CO', 'Maklumat Sijil Halal');"
+                />
+              </div>
+            </li>
+            <li class="clearfix search-result-data">
+              <div class="search-bil" style="width: 10%">2.</div>
+              <div class="search-details" style="width: 60%">
+                <span class="company-name">QSR STORES SDN BHD</span>
+                <span class="company-address"
+                  >TINGKAT 3A, TOWER 1,<br />VSQUARE @ PJ CITY CENTRE, JALAN
+                  UTARA,<br />46200 PETALING JAYA, SELANGOR.<br />Selangor</span
+                >
+                <span class="company-brand"
+                  ><br /><b>JENAMA:</b
+                  ><font color="#FF0000"><b>KFC</b></font></span
+                >
+              </div>
+              <div class="search-date-expired" style="width: 20%">
+                15/07/2024<br />30/06/2024<br />15/06/2024<br />15/06/2024<br />15/06/2024<br />15/05/2024<br />15/05/2024<br />15/04/2024<br />15/04/2024<br />31/03/2024<br />31/03/2024<br />31/03/2024<br />31/03/2024<br />29/02/2024<br />29/02/2024<br />29/02/2024<br />29/02/2024<br />15/02/2024<br />15/02/2024<br />15/02/2024<br />15/02/2024<br />15/02/2024<br />15/02/2024<br />31/01/2024<br />31/01/2024<br />15/01/2024<br />15/01/2024<br />15/01/2024<br />15/01/2024<br />31/12/2023<br />31/12/2023<br />31/12/2023<br />31/12/2023<br />31/12/2023<br />31/12/2023<br />15/12/2023<br />15/12/2023<br />15/12/2023<br />15/12/2023<br />31/10/2023<br />31/10/2023<br />15/10/2023<br />15/10/2023<br />30/09/2023<br />30/09/2023<br />30/09/2023<br />15/09/2023<br />15/09/2023<br />15/09/2023<br />15/09/2023<br />15/09/2023<br />15/09/2023<br />31/08/2023<br />31/08/2023<br />31/08/2023<br />15/08/2023<br />15/08/2023<br />15/08/2023<br />15/08/2023<br />15/08/2023<br />15/08/2023<br />15/08/2023<br />31/07/2023<br />31/07/2023<br />30/06/2023<br />15/06/2023<br />15/06/2023<br />15/06/2023<br />15/06/2023<br />15/05/2023<br />15/05/2023<br />15/05/2023<br />30/04/2023<br />30/04/2023<br />30/04/2023<br />30/04/2023<br />30/04/2023<br />30/04/2023<br />30/04/2023<br />15/04/2023<br />15/04/2023<br />15/04/2023<br />15/04/2023<br />15/04/2023<br />15/04/2023<br />15/04/2023<br />15/04/2023<br />31/03/2023<br />31/03/2023<br />31/03/2023<br />31/03/2023<br />31/03/2023<br />15/02/2023<br />15/02/2023<br />15/02/2023<br />15/02/2023<br />15/02/2023<br />15/02/2023<br />15/02/2023<br />15/02/2023<br />31/01/2023<br />31/01/2023<br />31/01/2023<br />31/01/2023<br />31/01/2023<br />31/01/2023<br />15/01/2023<br />15/01/2023<br />31/12/2022<br />31/12/2022<br />31/12/2022<br />31/12/2022<br />15/12/2022<br />15/12/2022<br />15/12/2022<br />15/12/2022<br />15/12/2022<br />15/12/2022<br />15/12/2022<br />15/12/2022<br />30/11/2022<br />30/11/2022<br />30/11/2022<br />15/11/2022<br />15/11/2022<br />31/10/2022<br />31/10/2022<br />31/10/2022<br />31/10/2022<br />15/10/2022<br />15/10/2022<br />15/10/2022<br />30/09/2022<br />30/09/2022<br />30/09/2022<br />30/09/2022<br />30/09/2022<br />15/09/2022<br />15/09/2022<br />15/09/2022<br />31/08/2022<br />15/08/2022<br />15/08/2022<br />15/08/2022<br />15/08/2022<br />15/08/2022<br />15/08/2022<br />15/08/2022<br />15/08/2022<br />15/08/2022<br />15/08/2022<br />15/08/2022<br />15/07/2022<br />30/06/2022<br />30/06/2022<br />30/06/2022<br />30/06/2022<br />30/06/2022<br />30/06/2022.
+              </div>
+              <div class="search-company" style="width: 10%">
+                <img
+                  src="images/searchIcon.png"
+                  alt="QSR STORES SDN BHD"
+                  title="QSR STORES SDN BHD"
+                  style="cursor: pointer"
+                  onclick="openModal('directory/slm_viewdetail.php?comp_code=COMP-20161109-093032&type=C&ty=CO', 'Maklumat Sijil Halal');"
+                />
+              </div>
+            </li>
+            <li class="clearfix search-result-data">
+              <div class="search-bil" style="width: 10%">3.</div>
+              <div class="search-details" style="width: 60%">
+                <span class="company-name"
+                  >QSR TRADING SDN BHD ( FORMELY KNOWN AS
+                  <font color="#FF0000"><b>KFC</b></font> MARKETING SDN BHD &
+                  QSR MARKETING SDN BHD )</span
+                >
+                <span class="company-address"
+                  >DATARAN HAMODAL, BLOK B, SUITE 2.02, 2ND FLOOR,<br />LOT
+                  NO.4, JALAN BERSATU 13/4, SEKSYEN 13,<br />46200 PETALING
+                  JAYA, SELANGOR<br
+                /></span>
+                <span class="company-brand"></span>
+              </div>
+              <div class="search-date-expired" style="width: 20%">
+                31/05/2024<br />15/01/2024<br />30/11/2023<br />30/09/2023<br />15/10/2022.
+              </div>
+              <div class="search-company" style="width: 10%">
+                <img
+                  src="images/searchIcon.png"
+                  alt="QSR TRADING SDN BHD ( FORMELY KNOWN AS KFC MARKETING SDN BHD & QSR MARKETING SDN BHD )"
+                  title="QSR TRADING SDN BHD ( FORMELY KNOWN AS KFC MARKETING SDN BHD & QSR MARKETING SDN BHD )"
+                  style="cursor: pointer"
+                  onclick="openModal('directory/slm_viewdetail.php?comp_code=COMP-20090708-081929&type=C&ty=CO', 'Maklumat Sijil Halal');"
+                />
+              </div>
+            </li>
+          </ul>
+          <input type="hidden" name="hdnCounter" value="4" />
+
+          <input type="hidden" name="t" value="" /><input
+            type="hidden"
+            name="a"
+            value=""
+          />
+          <table width="98%" border="0" align="center">
+            <tr>
+              <td class="corporatedesc">
+                <div align="center">
+                  [ 1 ] <br />
+                  <b>Total Record : 3 - Page 1 From 1</b>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <input type="hidden" name="ty" value="" />
+  </div>
+
+  <div class="footer-wrap">
+    <div class="main-wrap clearfix">
+      <div class="social-media-wrap">
+        <div class="social-media-icon hvr-float" style="float: right">
+          <img src="images/socialMediaSettings.png" /> <span>Social Media</span>
+        </div>
+        <div class="social-media-sub-wrap" style="float: right">
+          <div class="social-media-sub-content">
+            <ul>
+              <li class="clearfix">
+                <a href="https://twitter.com/halal_malaysia" target="_blank">
+                  <img src="images/twitter.png" />Twitter Halal</a
+                >
+              </li>
+              <li class="clearfix">
+                <a
+                  href="https://www.facebook.com/HabHalalJakim/"
+                  target="_blank"
+                >
+                  <img src="images/facebook.png" />Facebook Halal</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-counter">
+          <br /><br />
+          <h3>Visitor</h3>
+          <p>
+            <label style="font-size: 24px"
+              >Pengunjung terkini :<br />91,821,623</label
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-logo">
+        <h3>Halal Apps</h3>
+
+        <a
+          href="http://www.malaysia.gov.my"
+          class="hvr-float"
+          target="_blank"
+          title="Malaysia Government"
+        >
+          <img src="images/jataNegara.png" width="51" height="41"
+        /></a>
+        <a
+          href="http://www.islam.gov.my"
+          class="hvr-float"
+          target="_blank"
+          title="Jabatan kemajuan Islam Malaysia"
+        >
+          <img src="images/jakim.png" width="41" height="41"
+        /></a>
+        <a
+          href="http://www.kpdnkk.gov.my"
+          class="hvr-float"
+          target="_blank"
+          title="Kementerian Perdagangan Dalam Negeri, Koperasi dan Kepenggunaan"
+        >
+          <img src="images/kpdnkk.png" width="51" height="41"
+        /></a>
+        <a
+          href="http://www.ssm.com.my"
+          class="hvr-float"
+          target="_blank"
+          title="Suruhanjaya Syarikat Malaysia"
+        >
+          <img src="images/ssm.png" width="81" height="41"
+        /></a>
+        <a
+          href="http://www.dvs.gov.my"
+          class="hvr-float"
+          target="_blank"
+          title="Jabatan Perkhidmatan Veterinar"
+        >
+          <img src="images/veterinaryMalaysia.png" width="51" height="41"
+        /></a>
+        <a
+          href="http://www.moh.gov.my"
+          class="hvr-float"
+          target="_blank"
+          title="Kementerian Kesihatan Malaysia"
+        >
+          <img src="images/kkm.png" width="51" height="41"
+        /></a>
+      </div>
+      <div class="footer-copyright">
+        <h3>Address / Location</h3>
+
+        <p>
+          BAHAGIAN PENGURUSAN HALAL,<br />
+          JABATAN KEMAJUAN ISLAM MALAYSIA,<br />
+          Aras 6 & 7, Blok D,<br />
+          Kompleks Islam Putrajaya (KIP),<br />
+          No. 3 Jalan Tun Abdul Razak, <br />
+          Presint 3, 62100 Putrajaya, Malaysia.<br /><br />
+          Telefon : 03-8892 5000 | Fax : 03-8892 5005 | Emel :
+          pr_halal@islam.gov.my<br /><br />
+          Paparan terbaik dengan resolusi 1024 x 768 piksel dengan pelayar
+          popular seperti
+          <img src="images/icon-browsers.png" alt="" />
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <a
+    href="annpage.php"
+    data-toggle="modal"
+    data-target="#myModal"
+    id="a_href"
+    class="fa"
+    data-backdrop="static"
+  ></a>
+
+  <script>
+    $(document).ready(function () {
+      $("#slider-header").owlCarousel({
+        navigation: true,
+        slideSpeed: 300,
+        paginationSpeed: 400,
+        singleItem: true,
+        responsive: true,
+        autoPlay: 3000,
+
+        // "singleItem:true" is a shortcut for:
+        // items : 1,
+        // itemsDesktop : false,
+        // itemsDesktopSmall : false,
+        // itemsTablet: false,
+        // itemsMobile : false
+      });
+
+      /*$(".menu-expand").click(function(){
+                $(".menu-floating").toggleClass("menu-expand-all");
+                $(".menu-floating-content").toggleClass("menu-floating-content-show");
+                $(".menu-expand").toggleClass("menu-collapsed");
+        });*/
+
+      $(".social-media-icon").click(function () {
+        $(".social-media-sub-content").toggleClass(
+          "social-media-sub-content-show"
+        );
+      });
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $(".popup-starhype").magnificPopup({
+        type: "inline",
+        preloader: false,
+
+        fixedContentPos: false,
+        fixedBgPos: true,
+
+        overflowY: "auto",
+
+        closeBtnInside: true,
+        preloader: false,
+
+        midClick: true,
+        removalDelay: 300,
+        mainClass: "my-mfp-slide-bottom",
+
+        // When elemened is focused, some mobile browsers in some cases zoom in
+        // It looks not nice, so we disable it:
+        callbacks: {
+          beforeOpen: function () {
+            if ($(window).width() < 700) {
+              this.st.focus = false;
+            } else {
+              this.st.focus = "#name";
+            }
+          },
+        },
+      });
+    });
+  </script>
+
+  <script src="js/bootstrap-collapse.js"></script>
+  <script src="js/bootstrap-transition.js"></script>
+  <script src="js/bootstrap-tab.js"></script>
+
+  <script src="js/google-code-prettify/prettify.js"></script>
+  <script src="js/application.js"></script>
+
+  directory/index_directory
+</html>

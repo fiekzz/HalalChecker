@@ -1,0 +1,194 @@
+[
+  TextNode {
+    parentNode: HTMLElement {
+      parentNode: [HTMLElement],
+      childNodes: [Circular *1],
+      rawAttrs: '',
+      nodeType: 1,
+      rawTagName: 'ul',
+      id: '',
+      classList: [DOMTokenList]
+    },
+    childNodes: [],
+    nodeType: 3,
+    _rawText: '\n    \n    '
+  },
+  TextNode {
+    parentNode: HTMLElement {
+      parentNode: [HTMLElement],
+      childNodes: [Circular *1],
+      rawAttrs: '',
+      nodeType: 1,
+      rawTagName: 'ul',
+      id: '',
+      classList: [DOMTokenList]
+    },
+    childNodes: [],
+    nodeType: 3,
+    _rawText: '\n    '
+  },
+  HTMLElement {
+    parentNode: HTMLElement {
+      parentNode: [HTMLElement],
+      childNodes: [Circular *1],
+      rawAttrs: '',
+      nodeType: 1,
+      rawTagName: 'ul',
+      id: '',
+      classList: [DOMTokenList]
+    },
+    childNodes: [
+      [TextNode],
+      [HTMLElement],
+      [TextNode],
+      [HTMLElement],
+      [TextNode],
+      [HTMLElement],
+      [TextNode],
+      [HTMLElement],
+      [TextNode]
+    ],
+    rawAttrs: 'class="clearfix heading-search-result"',
+    nodeType: 1,
+    rawTagName: 'li',
+    id: '',
+    classList: DOMTokenList { _set: [Set], _afterUpdate: [Function (anonymous)] }      
+  },
+  TextNode {
+    parentNode: HTMLElement {
+      parentNode: [HTMLElement],
+      childNodes: [Circular *1],
+      rawAttrs: '',
+      nodeType: 1,
+      rawTagName: 'ul',
+      id: '',
+      classList: [DOMTokenList]
+    },
+    childNodes: [],
+    nodeType: 3,
+    _rawText: '\n\n  \t    '
+  },
+  HTMLElement {
+    parentNode: HTMLElement {
+      parentNode: [HTMLElement],
+      childNodes: [Circular *1],
+      rawAttrs: '',
+      nodeType: 1,
+      rawTagName: 'ul',
+      id: '',
+      classList: [DOMTokenList]
+    },
+    childNodes: [
+      [TextNode],
+      [HTMLElement],
+      [TextNode],
+      [HTMLElement],
+      [TextNode],
+      [HTMLElement],
+      [TextNode],
+      [HTMLElement],
+      [TextNode]
+    ],
+    rawAttrs: 'class="clearfix search-result-data"',
+    nodeType: 1,
+    rawTagName: 'li',
+    id: '',
+    classList: DOMTokenList { _set: [Set], _afterUpdate: [Function (anonymous)] }      
+  },
+  TextNode {
+    parentNode: HTMLElement {
+      parentNode: [HTMLElement],
+      childNodes: [Circular *1],
+      rawAttrs: '',
+      nodeType: 1,
+      rawTagName: 'ul',
+      id: '',
+      classList: [DOMTokenList]
+    },
+    childNodes: [],
+    nodeType: 3,
+    _rawText: '\n\t      '
+  },
+  HTMLElement {
+    parentNode: HTMLElement {
+      parentNode: [HTMLElement],
+      childNodes: [Circular *1],
+      rawAttrs: '',
+      nodeType: 1,
+      rawTagName: 'ul',
+      id: '',
+      classList: [DOMTokenList]
+    },
+    childNodes: [
+      [TextNode],
+      [HTMLElement],
+      [TextNode],
+      [HTMLElement],
+      [TextNode],
+      [HTMLElement],
+      [TextNode],
+      [HTMLElement],
+      [TextNode]
+    ],
+    rawAttrs: 'class="clearfix search-result-data"',
+    nodeType: 1,
+    rawTagName: 'li',
+    id: '',
+    classList: DOMTokenList { _set: [Set], _afterUpdate: [Function (anonymous)] }      
+  },
+  TextNode {
+    parentNode: HTMLElement {
+      parentNode: [HTMLElement],
+      childNodes: [Circular *1],
+      rawAttrs: '',
+      nodeType: 1,
+      rawTagName: 'ul',
+      id: '',
+      classList: [DOMTokenList]
+    },
+    childNodes: [],
+    nodeType: 3,
+    _rawText: '\n\t      '
+  },
+  HTMLElement {
+    parentNode: HTMLElement {
+      parentNode: [HTMLElement],
+      childNodes: [Circular *1],
+      rawAttrs: '',
+      nodeType: 1,
+      rawTagName: 'ul',
+      id: '',
+      classList: [DOMTokenList]
+    },
+    childNodes: [
+      [TextNode],
+      [HTMLElement],
+      [TextNode],
+      [HTMLElement],
+      [TextNode],
+      [HTMLElement],
+      [TextNode],
+      [HTMLElement],
+      [TextNode]
+    ],
+    rawAttrs: 'class="clearfix search-result-data"',
+    nodeType: 1,
+    rawTagName: 'li',
+    id: '',
+    classList: DOMTokenList { _set: [Set], _afterUpdate: [Function (anonymous)] }
+  },
+  TextNode {
+    parentNode: HTMLElement {
+      parentNode: [HTMLElement],
+      childNodes: [Circular *1],
+      rawAttrs: '',
+      nodeType: 1,
+      rawTagName: 'ul',
+      id: '',
+      classList: [DOMTokenList]
+    },
+    childNodes: [],
+    nodeType: 3,
+    _rawText: '\n\t  '
+  }
+]
